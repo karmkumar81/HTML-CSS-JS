@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Feedback</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+            margin:20px;
+        }
+
+        h1{
+            color:darkblue;
+        }
+
+        h2{
+            color:green;
+        }
+
+        h3{
+            color:brown;
+        }
+
+        .menu{
+            background-color:white;
+            border:1px solid gray;
+            padding:10px;
+        }
+
+        a{
+            text-decoration:none;
+            color:blue;
+            font-weight:bold;
+            padding:5px;
+        }
+
+        a:hover{
+            color:red;
+        }
+
+        .content{
+            background-color:white;
+            border:1px solid gray;
+            padding:20px;
+            margin-top:15px;
+        }
+
+        select, textarea{
+            width:300px;
+            padding:8px;
+        }
+
+        input{
+            margin-right:5px;
+        }
+
+        button{
+            padding:8px 15px;
+            background-color:lightblue;
+            border:1px solid gray;
+        }
+
+        button:hover{
+            background-color:lightgreen;
+        }
+
+        footer{
+            text-align:center;
+            background-color:white;
+            border:1px solid gray;
+            padding:10px;
+            margin-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<center>
+    <h1>STUDENT PORTAL</h1>
+    <h3>Faculty Feedback</h3>
+</center>
+
+<hr>
+
+<div class="menu">
+
+<h3>Menu</h3>
+
+<a href="index.html">Home</a> |
+<a href="registration.html">New Registration</a> |
+<a href="profile.html">Profile</a> |
+<a href="courses.html">Courses</a> |
+<a href="attendance.html">Attendance</a> |
+<a href="result.html">Result</a> |
+<a href="materials.html">Materials</a> |
+<a href="feedback.html">Feedback</a> |
+<a href="timetable.html">Time Table</a> |
+<a href="about.html">About Us</a>
+
+</div>
+
+<hr>
+
+<div class="content">
+
+<center>
+<h2>Faculty Feedback Form</h2>
+</center>
+
+<form>
+
+<p>
+<b>Select Subject:</b><br><br>
+
+<select>
+    <option>Fundamentals of Computer Network</option>
+    <option>Fundamentals of Data Structure and Algorithms</option>
+    <option>Web Development Framework</option>
+    <option>Object-Oriented Programming</option>
+</select>
+
+</p>
+
+<p>
+
+<b>Faculty Rating:</b><br><br>
+
+<input type="radio" name="rating"> Excellent
+<input type="radio" name="rating"> Good
+<input type="radio" name="rating"> Average
+<input type="radio" name="rating"> Poor
+
+</p>
+
+<p>
+
+<b>Comments:</b><br><br>
+
+<textarea rows="5" cols="40" placeholder="Write your feedback here..."></textarea>
+
+</p>
+
+<p>
+
+<button type="submit">Submit Feedback</button>
+<button type="reset">Reset</button>
+
+</p>
+
+</form>
+
+</div>
+
+<footer>
+
+<p>
+<b>Student Portal Website</b><br><br>
+© 2026 Student Portal. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
