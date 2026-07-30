@@ -3,19 +3,22 @@
 
 <head>
 
-    <title>Faculty Feedback</title>
+    <title>Study Materials</title>
 
 
     <style>
 
 
         body {
+
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f8fc;
             margin: 0;
             padding: 0;
             color: #333;
+
         }
+
 
 
 
@@ -31,6 +34,7 @@
 
 
 
+
         header h1 {
 
             margin: 0;
@@ -41,12 +45,14 @@
 
 
 
+
         header h3 {
 
             margin-top: 10px;
             font-weight: normal;
 
         }
+
 
 
 
@@ -76,6 +82,7 @@
 
 
 
+
         .menu h3 {
 
             color: #0b3d91;
@@ -98,6 +105,7 @@
 
 
 
+
         a:hover {
 
             color: #e67e22;
@@ -111,12 +119,13 @@
         .content {
 
             background-color: white;
-            padding: 30px;
+            padding: 25px;
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0px 3px 10px #ccc;
 
         }
+
 
 
 
@@ -132,20 +141,9 @@
 
 
 
-        form {
+        h3 {
 
-            width: 70%;
-            margin: auto;
-
-        }
-
-
-
-
-
-        label {
-
-            font-weight: bold;
+            color: #0b3d91;
 
         }
 
@@ -153,52 +151,23 @@
 
 
 
-        select {
+        table {
 
             width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-            font-size: 15px;
-
-        }
-
-
-
-
-
-        .rating {
-
-            margin-top: 15px;
-
-        }
-
-
-
-
-
-        input[type="radio"] {
-
-            margin-left: 15px;
-            margin-right: 5px;
-
-        }
-
-
-
-
-
-        button {
-
+            border-collapse: collapse;
             margin-top: 20px;
+
+        }
+
+
+
+
+
+        th {
+
             background-color: #0b3d91;
             color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 12px;
 
         }
 
@@ -206,9 +175,81 @@
 
 
 
-        button:hover {
+        td {
 
-            background-color: #e67e22;
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+
+        }
+
+
+
+
+
+        tr:nth-child(even) {
+
+            background-color: #f2f7ff;
+
+        }
+
+
+
+
+
+        tr:hover {
+
+            background-color: #eaf2ff;
+
+        }
+
+
+
+
+
+        .tips {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+
+        }
+
+
+
+
+
+        .tip-card {
+
+            width: 220px;
+            background-color: #f2f7ff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+
+        }
+
+
+
+
+
+        .tip-card:hover {
+
+            background-color: #eaf2ff;
+            transform: scale(1.03);
+
+        }
+
+
+
+
+
+        .tip-card p {
+
+            color: #333;
 
         }
 
@@ -238,17 +279,23 @@
 
 
 
+
 <header>
 
     <h1>STUDENT PORTAL</h1>
-    <h3>Faculty Feedback</h3>
+
+    <h3>Study Materials</h3>
 
 </header>
 
 
 
 
+
+
 <div class="container">
+
+
 
 
 
@@ -276,87 +323,101 @@
 
 
 
+
     <div class="content">
 
 
-        <h2>Faculty Feedback Form</h2>
+        <h2>B.Tech Computer Engineering</h2>
+
+        <h2>Semester - 3 Study Materials</h2>
 
 
 
-        <form>
+        <table>
 
 
-            <p>
+            <tr>
 
-                <label>Select Subject:</label><br>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Material Available</th>
 
-
-                <select>
-
-
-                    <option>
-                        Fundamentals of Computer Network
-                    </option>
+            </tr>
 
 
-                    <option>
-                        Fundamentals of Data Structure and Algorithms
-                    </option>
 
 
-                    <option>
-                        Web Development Framework
-                    </option>
+            <tr>
 
+                <td>ITUC201</td>
 
-                    <option>
-                        Object-Oriented Programming
-                    </option>
+                <td>
+                    Fundamentals of Computer Network
+                </td>
 
+                <td>
+                    Notes and PPT
+                </td>
 
-                </select>
-
-
-            </p>
+            </tr>
 
 
 
 
 
-            <p class="rating">
+            <tr>
 
+                <td>CSUC201</td>
 
-                <label>Faculty Rating:</label><br><br>
+                <td>
+                    Fundamentals of Data Structure and Algorithms
+                </td>
 
+                <td>
+                    Notes and Practice Programs
+                </td>
 
-                <input type="radio" name="rating">
-                Excellent
-
-
-                <input type="radio" name="rating">
-                Good
-
-
-                <input type="radio" name="rating">
-                Average
-
-
-                <input type="radio" name="rating">
-                Poor
-
-
-            </p>
+            </tr>
 
 
 
 
-            <button type="submit">
-                Submit Feedback
-            </button>
+
+            <tr>
+
+                <td>ITUE203</td>
+
+                <td>
+                    Web Development Framework
+                </td>
+
+                <td>
+                    HTML Notes and Lab Manual
+                </td>
+
+            </tr>
 
 
 
-        </form>
+
+
+            <tr>
+
+                <td>CEUE203</td>
+
+                <td>
+                    Object-Oriented Programming
+                </td>
+
+                <td>
+                    Java Notes and Programs
+                </td>
+
+            </tr>
+
+
+
+        </table>
 
 
 
@@ -364,7 +425,99 @@
 
 
 
+
+
+
+    <div class="content">
+
+
+        <h3>Preparation Tips</h3>
+
+
+
+        <div class="tips">
+
+
+            <div class="tip-card">
+
+                <h4>Regular Lectures</h4>
+
+                <p>
+                    Attend all lectures regularly.
+                </p>
+
+            </div>
+
+
+
+
+            <div class="tip-card">
+
+                <h4>Programming Practice</h4>
+
+                <p>
+                    Practice programming every day.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="tip-card">
+
+                <h4>Assignments</h4>
+
+                <p>
+                    Complete practical assignments on time.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="tip-card">
+
+                <h4>Revision</h4>
+
+                <p>
+                    Revise notes before examinations.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="tip-card">
+
+                <h4>Previous Papers</h4>
+
+                <p>
+                    Solve previous year question papers.
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
 </div>
+
+
 
 
 
@@ -378,6 +531,7 @@
 
 
 </footer>
+
 
 
 
