@@ -1,167 +1,328 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Semester Result</title>
-
-<style>
-
-body{
-    font-family: Arial, sans-serif;
-    background-color:#f2f2f2;
-    margin:20px;
-}
+    <title>Semester Result</title>
 
 
-h1{
-    color:darkblue;
-}
+    <style>
 
 
-h2{
-    color:green;
-}
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
+        }
 
 
-h3{
-    color:brown;
-}
 
 
-.menu{
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-}
+        header {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+
+        }
 
 
-a{
-    text-decoration:none;
-    color:blue;
-    font-weight:bold;
-    padding:5px;
-}
 
 
-a:hover{
-    color:red;
-}
+
+        header h1 {
+
+            margin: 0;
+            font-size: 35px;
+
+        }
 
 
-.content{
-    background-color:white;
-    border:1px solid gray;
-    padding:15px;
-    margin-top:15px;
-}
 
 
-table{
 
-    border-collapse:collapse;
-    background-color:white;
-    margin:15px;
+        header h3 {
 
-}
+            margin-top: 10px;
+            font-weight: normal;
 
-
-td,th{
-
-    border:1px solid black;
-    padding:10px;
-
-}
+        }
 
 
-th{
-
-    background-color:lightgray;
-
-}
 
 
-tr:hover{
 
-    background-color:#eeeeee;
+        .container {
 
-}
+            width: 85%;
+            margin: auto;
 
-
-.result{
-
-    width:40%;
-
-}
+        }
 
 
-footer{
-
-    text-align:center;
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-    margin-top:20px;
-
-}
 
 
-</style>
+
+        .menu {
+
+            background-color: white;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px #ccc;
+
+        }
+
+
+
+
+
+        .menu h3 {
+
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        a {
+
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+            margin: 5px;
+
+        }
+
+
+
+
+
+        a:hover {
+
+            color: #e67e22;
+
+        }
+
+
+
+
+
+        .content {
+
+            background-color: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #ccc;
+
+        }
+
+
+
+
+
+        h2 {
+
+            text-align: center;
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        h3 {
+
+            color: #0b3d91;
+            text-align: center;
+
+        }
+
+
+
+
+
+        table {
+
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+
+
+
+
+        th {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 12px;
+
+        }
+
+
+
+
+
+        td {
+
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+
+        }
+
+
+
+
+
+        .info td:first-child,
+        .summary td:first-child {
+
+            background-color: #f2f7ff;
+            color: #0b3d91;
+            font-weight: bold;
+            text-align: left;
+
+        }
+
+
+
+
+
+        tr:nth-child(even) {
+
+            background-color: #f8fbff;
+
+        }
+
+
+
+
+
+        tr:hover {
+
+            background-color: #eaf2ff;
+
+        }
+
+
+
+
+
+        .pass {
+
+            color: green;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .summary {
+
+            width: 60%;
+            margin: auto;
+
+        }
+
+
+
+
+
+        .final-result {
+
+            background-color: #d9f7df;
+
+        }
+
+
+
+
+
+        footer {
+
+            margin-top: 30px;
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+
+
+    </style>
 
 
 </head>
 
 
+
 <body>
 
 
-<center>
 
-<h1>STUDENT PORTAL</h1>
+<header>
 
-<h3>Semester Result</h3>
+    <h1>STUDENT PORTAL</h1>
 
-</center>
+    <h3>Semester Result</h3>
+
+</header>
 
 
-<hr>
+
+
+
+
+<div class="container">
+
+
+
 
 
 <div class="menu">
+
 
 <h3>Menu</h3>
 
 
 <a href="index.html">Home</a> |
-
 <a href="registration.html">New Registration</a> |
-
 <a href="profile.html">Profile</a> |
-
 <a href="courses.html">Courses</a> |
-
 <a href="attendance.html">Attendance</a> |
-
 <a href="result.html">Result</a> |
-
 <a href="materials.html">Materials</a> |
-
 <a href="feedback.html">Feedback</a> |
-
 <a href="timetable.html">Time Table</a> |
-
 <a href="about.html">About Us</a>
 
 
 </div>
 
 
-<hr>
+
+
+
 
 
 <div class="content">
-
-
-<center>
 
 
 <h2>B.Tech Computer Engineering</h2>
@@ -169,40 +330,62 @@ footer{
 <h3>Semester - 2 Result</h3>
 
 
-<table class="result">
+
+
+<table class="info">
 
 
 <tr>
-<td><b>Student Name</b></td>
+
+<td>Student Name</td>
 <td>Karmkumar Thummar</td>
+
 </tr>
 
 
+
 <tr>
-<td><b>Enrollment No.</b></td>
+
+<td>Enrollment No.</td>
 <td>25CE124</td>
+
 </tr>
 
 
+
+
 <tr>
-<td><b>Course</b></td>
+
+<td>Course</td>
 <td>B.Tech Computer Engineering</td>
+
 </tr>
 
 
+
+
 <tr>
-<td><b>Semester</b></td>
+
+<td>Semester</td>
 <td>Second Semester</td>
+
 </tr>
 
 
+
+
 <tr>
-<td><b>Academic Year</b></td>
+
+<td>Academic Year</td>
 <td>2025 - 2026</td>
+
 </tr>
 
 
 </table>
+
+
+
 
 
 
@@ -221,13 +404,15 @@ footer{
 
 
 
+
 <tr>
 <td>1</td>
 <td>CEUC102</td>
 <td>Programming with C++</td>
 <td>A</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
 
 
 <tr>
@@ -235,8 +420,10 @@ footer{
 <td>CLUV101</td>
 <td>Environmental Sciences</td>
 <td>B+</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -244,8 +431,10 @@ footer{
 <td>CSUC101</td>
 <td>Digital Electronics</td>
 <td>A</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -253,8 +442,10 @@ footer{
 <td>CUUV101</td>
 <td>Community Engagement and Sustainable Development</td>
 <td>O</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -262,8 +453,10 @@ footer{
 <td>HSUS102</td>
 <td>Photography</td>
 <td>A+</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -271,8 +464,10 @@ footer{
 <td>MEUD101</td>
 <td>Elements of Engineering</td>
 <td>B+</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -280,8 +475,10 @@ footer{
 <td>MSUD102</td>
 <td>Engineering Mathematics - II</td>
 <td>A</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
+
 
 
 <tr>
@@ -289,80 +486,117 @@ footer{
 <td>PSUD102</td>
 <td>Engineering Physics - II</td>
 <td>B</td>
-<td>Pass</td>
+<td class="pass">Pass</td>
 </tr>
+
 
 
 </table>
 
-
-<hr>
-
-
-<table class="result">
-
-
-<tr>
-<td><b>Total Subjects</b></td>
-<td>8</td>
-</tr>
-
-
-<tr>
-<td><b>Subjects Passed</b></td>
-<td>8</td>
-</tr>
-
-
-<tr>
-<td><b>Backlogs (KT)</b></td>
-<td>0</td>
-</tr>
-
-
-<tr>
-<td><b>SGPA</b></td>
-<td>8.72</td>
-</tr>
-
-
-<tr>
-<td><b>CGPA</b></td>
-<td>8.65</td>
-</tr>
-
-
-<tr>
-<td><b>Overall Result</b></td>
-<td><b>PASS</b></td>
-</tr>
-
-
-</table>
-
-
-</center>
 
 
 </div>
 
 
 
+
+
+
+
+
+<div class="content">
+
+
+<h2>Result Summary</h2>
+
+
+
+<table class="summary">
+
+
+<tr>
+<td>Total Subjects</td>
+<td>8</td>
+</tr>
+
+
+
+
+<tr>
+<td>Subjects Passed</td>
+<td>8</td>
+</tr>
+
+
+
+
+<tr>
+<td>Backlogs (KT)</td>
+<td>0</td>
+</tr>
+
+
+
+
+<tr>
+<td>SGPA</td>
+<td>8.72</td>
+</tr>
+
+
+
+
+<tr>
+<td>CGPA</td>
+<td>8.65</td>
+</tr>
+
+
+
+
+<tr class="final-result">
+
+<td>Overall Result</td>
+<td class="pass">PASS</td>
+
+</tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
 <footer>
 
 
-<p>
-
-<b>Student Portal Website</b><br><br>
+<b>Student Portal Website</b><br>
 
 © 2026 Student Portal. All Rights Reserved.
-
-</p>
 
 
 </footer>
 
 
+
+
+
 </body>
+
 
 </html>
