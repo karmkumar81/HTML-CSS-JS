@@ -1,139 +1,319 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Student Registration</title>
-
-<style>
-
-body{
-    font-family: Arial, sans-serif;
-    background-color:#f2f2f2;
-    margin:20px;
-}
+    <title>Student Registration</title>
 
 
-h1{
-    color:darkblue;
-}
+    <style>
 
 
-h2{
-    color:green;
-}
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
+        }
 
 
-h3{
-    color:brown;
-}
 
 
-.menu{
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-}
+        header {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+
+        }
 
 
-a{
-    text-decoration:none;
-    color:blue;
-    font-weight:bold;
-    padding:5px;
-}
 
 
-a:hover{
-    color:red;
-}
+
+        header h1 {
+
+            margin: 0;
+            font-size: 35px;
+
+        }
 
 
-.content{
-    background-color:white;
-    border:1px solid gray;
-    padding:20px;
-    margin-top:15px;
-}
 
 
-table{
-    border-collapse:collapse;
-    background-color:white;
-}
+
+        header h3 {
+
+            margin-top: 10px;
+            font-weight: normal;
+
+        }
 
 
-td{
-    border:1px solid black;
-    padding:10px;
-}
 
 
-input, select, textarea{
 
-    padding:7px;
-    width:250px;
+        .container {
 
-}
+            width: 85%;
+            margin: auto;
 
-
-input[type="radio"], 
-input[type="checkbox"]{
-
-    width:auto;
-
-}
+        }
 
 
-input[type="submit"], 
-input[type="reset"]{
-
-    width:100px;
-    background-color:lightblue;
-    border:1px solid gray;
-    cursor:pointer;
-
-}
 
 
-input[type="submit"]:hover,
-input[type="reset"]:hover{
 
-    background-color:lightgreen;
+        .menu {
 
-}
+            background-color: white;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px #ccc;
 
-
-footer{
-
-    text-align:center;
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-    margin-top:20px;
-
-}
+        }
 
 
-</style>
+
+
+
+        .menu h3 {
+
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        a {
+
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+            margin: 5px;
+
+        }
+
+
+
+
+
+        a:hover {
+
+            color: #e67e22;
+
+        }
+
+
+
+
+
+        .content {
+
+            background-color: white;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #ccc;
+
+        }
+
+
+
+
+
+        h2 {
+
+            text-align: center;
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        form {
+
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+
+
+
+        table {
+
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+
+
+
+
+        td {
+
+            padding: 12px;
+            border: 1px solid #ddd;
+
+        }
+
+
+
+
+
+        td:first-child {
+
+            width: 35%;
+            background-color: #f2f7ff;
+            color: #0b3d91;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        input,
+        select,
+        textarea {
+
+
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 14px;
+
+
+        }
+
+
+
+
+
+        input[type="radio"],
+        input[type="checkbox"] {
+
+            width: auto;
+
+        }
+
+
+
+
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+
+            outline: none;
+            border-color: #0b3d91;
+
+        }
+
+
+
+
+
+        .buttons {
+
+            text-align: center;
+
+        }
+
+
+
+
+
+        input[type="submit"],
+        input[type="reset"] {
+
+
+            width: 120px;
+            background-color: #0b3d91;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+
+
+        }
+
+
+
+
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+
+            background-color: #e67e22;
+
+        }
+
+
+
+
+
+        footer {
+
+            margin-top: 30px;
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+
+    </style>
+
 
 </head>
+
 
 
 <body>
 
 
-<center>
-
-<h1>STUDENT PORTAL</h1>
-<h3>Student Registration Form</h3>
-
-</center>
 
 
-<hr>
+<header>
+
+    <h1>STUDENT PORTAL</h1>
+
+    <h3>Student Registration Form</h3>
+
+</header>
+
+
+
+
+
+
+<div class="container">
+
+
+
 
 
 <div class="menu">
+
 
 <h3>Menu</h3>
 
@@ -153,15 +333,17 @@ footer{
 </div>
 
 
-<hr>
+
+
+
 
 
 <div class="content">
 
 
-<center>
-
 <h2>Registration Form</h2>
+
+
 
 
 <form>
@@ -170,37 +352,77 @@ footer{
 <table>
 
 
+
 <tr>
 <td>First Name</td>
-<td><input type="text" placeholder="Enter First Name"></td>
+
+<td>
+<input type="text" placeholder="Enter First Name">
+</td>
+
 </tr>
 
 
+
+
 <tr>
+
 <td>Last Name</td>
-<td><input type="text" placeholder="Enter Last Name"></td>
+
+<td>
+<input type="text" placeholder="Enter Last Name">
+</td>
+
 </tr>
 
 
+
+
+
 <tr>
+
 <td>Enrollment Number</td>
-<td><input type="text" placeholder="Enter Enrollment No"></td>
+
+<td>
+<input type="text" placeholder="Enter Enrollment No">
+</td>
+
 </tr>
 
 
+
+
+
 <tr>
+
 <td>Email</td>
-<td><input type="email" placeholder="Enter Email"></td>
+
+<td>
+<input type="email" placeholder="Enter Email">
+</td>
+
 </tr>
 
 
+
+
+
 <tr>
+
 <td>Password</td>
-<td><input type="password" placeholder="Enter Password"></td>
+
+<td>
+<input type="password" placeholder="Enter Password">
+</td>
+
 </tr>
 
 
+
+
+
 <tr>
+
 <td>Gender</td>
 
 <td>
@@ -214,6 +436,9 @@ footer{
 </tr>
 
 
+
+
+
 <tr>
 
 <td>Date of Birth</td>
@@ -223,6 +448,9 @@ footer{
 </td>
 
 </tr>
+
+
+
 
 
 <tr>
@@ -237,11 +465,14 @@ footer{
 
 
 
+
+
 <tr>
 
 <td>Course</td>
 
 <td>
+
 
 <select>
 
@@ -262,6 +493,9 @@ footer{
 </td>
 
 </tr>
+
+
+
 
 
 
@@ -298,8 +532,10 @@ footer{
 
 </td>
 
-
 </tr>
+
+
+
 
 
 
@@ -309,11 +545,14 @@ footer{
 
 <td>
 
-<textarea rows="4" cols="30" placeholder="Enter Address"></textarea>
+<textarea rows="4" placeholder="Enter Address"></textarea>
 
 </td>
 
 </tr>
+
+
+
 
 
 
@@ -322,6 +561,7 @@ footer{
 <td>Hobbies</td>
 
 <td>
+
 
 <input type="checkbox"> Reading
 
@@ -332,17 +572,20 @@ footer{
 
 </td>
 
-
 </tr>
+
+
+
 
 
 
 <tr>
 
-<td colspan="2" align="center">
+<td colspan="2" class="buttons">
 
 
 <input type="submit" value="Register">
+
 
 <input type="reset" value="Clear">
 
@@ -352,34 +595,48 @@ footer{
 </tr>
 
 
+
+
+
 </table>
+
 
 
 </form>
 
 
-</center>
+
+</div>
+
+
+
+
 
 
 </div>
 
 
+
+
+
+
+
 <footer>
 
 
-<p>
-
-<b>Student Portal Website</b><br><br>
+<b>Student Portal Website</b><br>
 
 © 2026 Student Portal. All Rights Reserved.
-
-
-</p>
 
 
 </footer>
 
 
+
+
+
+
 </body>
+
 
 </html>
