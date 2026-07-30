@@ -1,129 +1,289 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Student Time Table</title>
-
-<style>
-
-body{
-    font-family: Arial, sans-serif;
-    background-color:#f2f2f2;
-    margin:20px;
-}
+    <title>Time Table</title>
 
 
-h1{
-    color:darkblue;
-}
+    <style>
 
 
-h2{
-    color:green;
-}
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
+        }
 
 
-h3{
-    color:brown;
-}
 
 
-.menu{
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-}
+        header {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+
+        }
 
 
-a{
-    text-decoration:none;
-    color:blue;
-    font-weight:bold;
-    padding:5px;
-}
 
 
-a:hover{
-    color:red;
-}
+        header h1 {
+
+            margin: 0;
+            font-size: 35px;
+
+        }
 
 
-.content{
-    background-color:white;
-    border:1px solid gray;
-    padding:15px;
-    margin-top:15px;
-}
 
 
-table{
+        header h3 {
 
-    width:100%;
-    border-collapse:collapse;
-    background-color:white;
+            margin-top: 10px;
+            font-weight: normal;
 
-}
-
-
-th{
-
-    background-color:lightgray;
-}
+        }
 
 
-th,td{
-
-    border:1px solid black;
-    padding:10px;
-    text-align:center;
-
-}
 
 
-tr:hover{
 
-    background-color:#eeeeee;
+        .container {
 
-}
+            width: 90%;
+            margin: auto;
 
-
-.off{
-
-    background-color:#dddddd;
-    font-weight:bold;
-
-}
+        }
 
 
-footer{
-
-    text-align:center;
-    background-color:white;
-    border:1px solid gray;
-    padding:10px;
-    margin-top:20px;
-
-}
 
 
-</style>
+
+        .menu {
+
+            background-color: white;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px #ccc;
+
+        }
+
+
+
+
+
+        .menu h3 {
+
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        a {
+
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+            margin: 5px;
+
+        }
+
+
+
+
+
+        a:hover {
+
+            color: #e67e22;
+
+        }
+
+
+
+
+
+        .content {
+
+            background-color: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #ccc;
+
+        }
+
+
+
+
+
+        h2 {
+
+            text-align: center;
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        table {
+
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+
+
+
+
+        th {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 12px;
+            font-size: 14px;
+
+        }
+
+
+
+
+
+        td {
+
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+
+        }
+
+
+
+
+
+        tr:nth-child(even) {
+
+            background-color: #f2f7ff;
+
+        }
+
+
+
+
+
+        tr:hover {
+
+            background-color: #eaf2ff;
+
+        }
+
+
+
+
+
+        .day {
+
+            color: #0b3d91;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .practical {
+
+            background-color: #fff4e5;
+
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .off {
+
+            background-color: #d9f7df;
+            color: green;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .holiday {
+
+            background-color: #ffe5e5;
+            color: red;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        footer {
+
+            margin-top: 30px;
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+
+    </style>
+
 
 </head>
+
 
 
 <body>
 
 
-<center>
-
-<h1>STUDENT PORTAL</h1>
-
-<h3>B.Tech Computer Engineering - Semester 3 Time Table</h3>
-
-</center>
 
 
-<hr>
+<header>
+
+    <h1>STUDENT PORTAL</h1>
+
+    <h3>B.Tech Computer Engineering - Semester 3 Time Table</h3>
+
+</header>
+
+
+
+
+
+
+
+<div class="container">
+
+
+
 
 
 <div class="menu">
@@ -133,39 +293,32 @@ footer{
 
 
 <a href="index.html">Home</a> |
-
 <a href="registration.html">New Registration</a> |
-
 <a href="profile.html">Profile</a> |
-
 <a href="courses.html">Courses</a> |
-
 <a href="attendance.html">Attendance</a> |
-
 <a href="result.html">Result</a> |
-
 <a href="materials.html">Materials</a> |
-
 <a href="feedback.html">Feedback</a> |
-
 <a href="timetable.html">Time Table</a> |
-
 <a href="about.html">About Us</a>
 
 
 </div>
 
 
-<hr>
+
+
+
+
 
 
 <div class="content">
 
 
-<center>
-
-
 <h2>Time Table</h2>
+
+
 
 
 <table>
@@ -187,169 +340,167 @@ footer{
 
 
 
+
+
 <tr>
 
-<td><b>Monday</b></td>
+<td class="day">Monday</td>
 
 <td>CN</td>
-
 <td>DSA</td>
-
 <td>-</td>
-
-<td>WDF</td>
-
 <td>OOP</td>
-
+<td>WDF</td>
 <td>-</td>
-
-<td>DSA</td>
-
-<td>CN</td>
+<td class="practical">WDF (P)</td>
+<td class="practical">WDF (P)</td>
 
 </tr>
+
+
 
 
 
 <tr>
 
-<td><b>Tuesday</b></td>
+<td class="day">Tuesday</td>
 
 <td>DSA</td>
-
 <td>CN</td>
-
 <td>-</td>
-
+<td>WDF</td>
 <td>OOP</td>
-
-<td>WDF</td>
-
 <td>-</td>
-
-<td>DSA</td>
-
-<td>WDF</td>
+<td class="practical">DSA (P)</td>
+<td class="practical">DSA (P)</td>
 
 </tr>
+
+
 
 
 
 <tr>
 
-<td><b>Wednesday</b></td>
+<td class="day">Wednesday</td>
 
 <td>OOP</td>
-
 <td>WDF</td>
-
 <td>-</td>
-
 <td>CN</td>
-
 <td>DSA</td>
-
 <td>-</td>
-
-<td>OOP (P)</td>
-
-<td>OOP (P)</td>
+<td class="practical">OOP (P)</td>
+<td class="practical">OOP (P)</td>
 
 </tr>
+
+
 
 
 
 <tr>
 
-<td><b>Thursday</b></td>
+<td class="day">Thursday</td>
 
 <td>WDF</td>
-
 <td>CN</td>
-
 <td>-</td>
-
 <td>DSA</td>
-
 <td>OOP</td>
-
 <td>-</td>
-
-<td>CN (P)</td>
-
-<td>CN (P)</td>
+<td class="practical">CN (P)</td>
+<td class="practical">CN (P)</td>
 
 </tr>
+
+
 
 
 
 <tr>
 
-<td><b>Friday</b></td>
+<td class="day">Friday</td>
 
 <td>DSA</td>
-
 <td>OOP</td>
-
 <td>-</td>
-
 <td>WDF</td>
-
 <td>CN</td>
-
 <td>-</td>
-
-<td>WDF (P)</td>
-
-<td>WDF (P)</td>
+<td class="practical">WDF (P)</td>
+<td class="practical">WDF (P)</td>
 
 </tr>
 
 
 
-<tr class="off">
 
-<td><b>Saturday</b></td>
 
-<td colspan="8">OFF</td>
+<tr>
+
+<td class="day">Saturday</td>
+
+<td colspan="8" class="off">
+
+OFF
+
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td class="day">Sunday</td>
+
+<td colspan="8" class="holiday">
+
+HOLIDAY
+
+</td>
 
 </tr>
 
-
-
-<tr class="off">
-
-<td><b>Sunday</b></td>
-
-<td colspan="8">HOLIDAY</td>
-
-</tr>
 
 
 </table>
 
 
-</center>
+
+</div>
+
+
+
 
 
 </div>
 
 
+
+
+
+
+
+
 <footer>
 
 
-<p>
-
-<b>Student Portal Website</b><br><br>
+<b>Student Portal Website</b><br>
 
 © 2026 Student Portal. All Rights Reserved.
-
-</p>
 
 
 </footer>
 
 
+
+
+
 </body>
+
 
 </html>
