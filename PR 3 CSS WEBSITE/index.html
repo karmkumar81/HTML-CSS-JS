@@ -1,134 +1,474 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Student Portal</title>
+
+    <title>Student Portal - Home</title>
+
 
     <style>
 
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin:20px;
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
         }
 
-        h1{
-            color:darkblue;
+
+
+
+
+        header {
+
+            background-color: #0b3d91;
+            color: white;
+            padding: 25px;
+            text-align: center;
+
         }
 
-        h2{
-            color:green;
+
+
+
+        header h1 {
+
+            margin: 0;
+            font-size: 38px;
+
         }
 
-        h3{
-            color:brown;
+
+
+
+        header h3 {
+
+            margin-top: 10px;
+            font-weight: normal;
+
         }
 
-        a{
-            text-decoration:none;
-            color:blue;
-            font-weight:bold;
-            padding:5px;
+
+
+
+
+        .container {
+
+            width: 85%;
+            margin: auto;
+
         }
 
-        a:hover{
-            color:red;
+
+
+
+
+        .menu {
+
+            background-color: white;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px #ccc;
+
         }
 
-        p{
-            font-size:18px;
+
+
+
+        .menu h3 {
+
+            color: #0b3d91;
+
         }
 
-        .menu{
-            background-color:white;
-            border:1px solid gray;
-            padding:10px;
+
+
+
+
+        a {
+
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+            margin: 5px;
+
         }
 
-        .content{
-            background-color:white;
-            border:1px solid gray;
-            padding:15px;
-            margin-top:15px;
+
+
+
+        a:hover {
+
+            color: #e67e22;
+
         }
 
-        ul{
-            line-height:30px;
+
+
+
+
+        .welcome {
+
+            background-color: white;
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #ccc;
+            text-align: center;
+
         }
 
-        footer{
-            text-align:center;
-            margin-top:20px;
-            background-color:white;
-            border:1px solid gray;
-            padding:10px;
+
+
+
+
+        .welcome h2 {
+
+            color: #0b3d91;
+
         }
+
+
+
+
+
+        .features {
+
+            background-color: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #ccc;
+
+        }
+
+
+
+
+
+        .features h3 {
+
+            text-align: center;
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        .card-container {
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+
+        }
+
+
+
+
+
+        .card {
+
+            width: 220px;
+            background-color: #f2f7ff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+
+        }
+
+
+
+
+
+        .card:hover {
+
+            background-color: #eaf2ff;
+            transform: scale(1.03);
+
+        }
+
+
+
+
+
+        .card h4 {
+
+            color: #0b3d91;
+
+        }
+
+
+
+
+
+        footer {
+
+            margin-top: 30px;
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+
 
     </style>
 
+
 </head>
+
+
 
 <body>
 
-<center>
+
+
+
+<header>
+
     <h1>STUDENT PORTAL</h1>
+
     <h3>Welcome to Student Management System</h3>
-</center>
 
-<hr>
+</header>
 
-<div class="menu">
 
-<h3>Menu</h3>
 
-<a href="index.html">Home</a> |
-<a href="registration.html">New Registration</a> |
-<a href="profile.html">Profile</a> |
-<a href="courses.html">Courses</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="result.html">Result</a> |
-<a href="materials.html">Materials</a> |
-<a href="feedback.html">Feedback</a> |
-<a href="timetable.html">Time Table</a> |
-<a href="about.html">About Us</a>
+
+
+<div class="container">
+
+
+
+
+
+    <div class="menu">
+
+
+        <h3>Menu</h3>
+
+
+        <a href="index.html">Home</a> |
+        <a href="registration.html">New Registration</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="result.html">Result</a> |
+        <a href="materials.html">Materials</a> |
+        <a href="feedback.html">Feedback</a> |
+        <a href="timetable.html">Time Table</a> |
+        <a href="about.html">About Us</a>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="welcome">
+
+
+        <h2>Home</h2>
+
+
+        <p>
+
+            Welcome to the Student Portal.
+
+            Students can access their profile, attendance,
+            results, timetable and course details through this system.
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="features">
+
+
+        <h3>Portal Features</h3>
+
+
+
+        <div class="card-container">
+
+
+
+            <div class="card">
+
+                <h4>Student Registration</h4>
+
+                <p>
+                    Register new student details easily.
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <h4>Student Profile</h4>
+
+                <p>
+                    View personal and academic information.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Course Details</h4>
+
+                <p>
+                    Check semester subjects and courses.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Attendance Record</h4>
+
+                <p>
+                    Monitor attendance percentage.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Results</h4>
+
+                <p>
+                    View examination results.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Study Materials</h4>
+
+                <p>
+                    Access learning resources.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Feedback</h4>
+
+                <p>
+                    Submit faculty feedback.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>Time Table</h4>
+
+                <p>
+                    Check daily lecture schedule.
+                </p>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <h4>About Us</h4>
+
+                <p>
+                    Know about CHARUSAT University.
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
 
 </div>
 
-<hr>
 
-<div class="content">
 
-<h2>Home</h2>
 
-<p>
-Welcome to the Student Portal.
-Students can access their profile, attendance, results, timetable and course details.
-</p>
-
-<hr>
-
-<h3>Portal Features</h3>
-
-<ul>
-    <li>Student Registration</li>
-    <li>Student Profile</li>
-    <li>Course Details</li>
-    <li>Attendance Record</li>
-    <li>Results</li>
-    <li>Study Materials</li>
-    <li>Feedback</li>
-    <li>Time Table</li>
-    <li>About Us</li>
-</ul>
-
-</div>
 
 <footer>
 
-<b>Student Portal Website</b><br><br>
 
-© 2026 Student Portal. All Rights Reserved.
+    <b>Student Portal Website</b><br>
+
+    © 2026 Student Portal. All Rights Reserved.
+
 
 </footer>
 
+
+
+
+
 </body>
+
+
 </html>
